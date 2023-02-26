@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Build and Test
-        run: brew install boost freetype libpng sdl2 pkgconfig
+        run: brew install boost freetype libpng sdl2 pkgconfig nasm
       - name: Build mupen64plus
-        run: make all
+        run: cd mupen64plus-core && make all
